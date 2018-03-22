@@ -1,8 +1,8 @@
-package nl.han.ica.Fishy;
+package nl.han.ica.Vissie;
 
 import nl.han.ica.OOPDProcessingEngineHAN.Engine.GameEngine;
 
-public class Fishy extends GameEngine
+public class Vissie extends GameEngine
 {
     public static void main(String[] args)
     {
