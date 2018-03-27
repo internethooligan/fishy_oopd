@@ -1,8 +1,8 @@
-package nl.han.ica.Vissie;
+package nl.han.ica.mainVissie;
 
 import nl.han.ica.OOPDProcessingEngineHAN.Engine.GameEngine;
 
-public class Vissie extends GameEngine
+public class mainVissie extends GameEngine
 {
     public static void main(String[] args)
     {
