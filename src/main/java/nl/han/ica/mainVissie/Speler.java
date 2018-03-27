@@ -9,13 +9,12 @@ public class Speler extends Vis
 
     Speler(Oceaan o)
     {
-        super(0,/*(o.getWorldWidth() / 2), (o.getWorldHeight() / 2)*/0, o, new Sprite("src/main/java/nl/han/ica/mainVissie/media/fish.jpeg"), 96);
+        super((o.getWorldWidth() / 2), (o.getWorldHeight() / 2), o, new Sprite("src/main/java/nl/han/ica/mainVissie/media/fish.png"), 96);
     }
 
     @Override
     public void update()
     {
-        System.out.println("asdf");
         if (getX() <= 0)
         {
             setxSpeed(0);
