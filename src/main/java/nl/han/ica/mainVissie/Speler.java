@@ -1,30 +1,38 @@
 package nl.han.ica.mainVissie;
 
 import nl.han.ica.OOPDProcessingEngineHAN.Objects.Sprite;
-import nl.han.ica.OOPDProcessingEngineHAN.Sound.Sound;
 
-public class Speler extends Vis {
+
+public class Speler extends Vis
+{
     static int grootte = 25;
 
-    Speler(Oceaan o) {
-        super((o.getWorldWidth()/2), (o.getWorldHeight()/2), o, new Sprite("src/main/java/nl/han/ica/mainVissie/media/fish.png"), 96);
+    Speler(Oceaan o)
+    {
+        super(0,/*(o.getWorldWidth() / 2), (o.getWorldHeight() / 2)*/0, o, new Sprite("src/main/java/nl/han/ica/mainVissie/media/fish.jpeg"), 96);
     }
 
     @Override
-    public void update() {
-        if (getX()<=0) {
+    public void update()
+    {
+        System.out.println("asdf");
+        if (getX() <= 0)
+        {
             setxSpeed(0);
             setX(0);
         }
-        if (getY()<=0) {
+        if (getY() <= 0)
+        {
             setySpeed(0);
             setY(0);
         }
-        if (getX()>=super.oceaan.getWorldWidth() - grootte) {
+        if (getX() >= super.oceaan.getWorldWidth() - grootte)
+        {
             setxSpeed(0);
             setX(super.oceaan.getWorldWidth() - grootte);
         }
-        if (getY()>=super.oceaan.getWorldHeight() - grootte) {
+        if (getY() >= super.oceaan.getWorldHeight() - grootte)
+        {
             setySpeed(0);
             setY(super.oceaan.getWorldHeight() - grootte);
         }
@@ -32,23 +40,30 @@ public class Speler extends Vis {
     }
 
     @Override
-    public void keyPressed(int keyCode, char key) {
+    public void keyPressed(int keyCode, char key)
+    {
         final int speed = 5;
-        if (keyCode == super.oceaan.LEFT) {
+        if (keyCode == super.a.LEFT)
+        {
             setDirectionSpeed(270, speed);
             setCurrentFrameIndex(0);
         }
-        if (keyCode == super.oceaan.UP) {
+        if (keyCode == super.a.UP)
+        {
             setDirectionSpeed(0, speed);
         }
-        if (keyCode == super.oceaan.RIGHT) {
+        if (keyCode == super.a.RIGHT)
+        {
             setDirectionSpeed(90, speed);
             setCurrentFrameIndex(1);
         }
-        if (keyCode == super.oceaan.DOWN) {
+        if (keyCode == super.a.DOWN)
+        {
             setDirectionSpeed(180, speed);
         }
-        if (key == ' ') {
-            System.out.println("Spatie!");
+        if (key == super.a.ENTER)
+        {
+            System.out.println("Enter!");
         }
+    }
 }
