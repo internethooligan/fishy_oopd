@@ -20,7 +20,7 @@ public class mainVissie extends GameEngine
     {
         maakOceaanAan();
         initializeTileMap();
-        oceaan.createViewWithViewport(this,800, 800, 1.1f);
+        oceaan.createViewWithViewport(this,1000, 800, 1.1f);
     }
 
     @Override
@@ -29,7 +29,7 @@ public class mainVissie extends GameEngine
 
     }
 
-    public void maakOceaanAan()
+    private void maakOceaanAan()
     {
         oceaan = new Oceaan(this);
     }
@@ -43,7 +43,6 @@ public class mainVissie extends GameEngine
         TileType[] tileTypes = {boardTileType};
         int tileSize = 50;
         int tilesMap[][] = {
-                {0, -1, -1, -1, -1, -1, -1, -1, -1, -1},
                 {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
                 {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
                 {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
@@ -52,7 +51,8 @@ public class mainVissie extends GameEngine
                 {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
                 {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
                 {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
-                {-1, -1, -1, 0, 0, 0, 0, -1, 0, 0},
+                {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
+                {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
                 {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
                 {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
                 {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
