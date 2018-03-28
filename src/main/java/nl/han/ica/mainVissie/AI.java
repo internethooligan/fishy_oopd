@@ -1,15 +1,23 @@
 package nl.han.ica.mainVissie;
 
+import java.util.Random;
 import nl.han.ica.OOPDProcessingEngineHAN.Objects.Sprite;
 
 public class AI extends Vis {
+    //
     private int grootte;
-    private boolean richting; //Rechts = true
+    private int richting;
+
+    private final static int LINKS = 0;
+    private final static int RECHTS = 1;
 
 
 
-    AI(int x, int y, Oceaan o, Sprite s, int frames) {
+    public AI(int x, int y, Oceaan o, Sprite s, int frames) {
         super(x, y, o, s, frames);
+        Random r = new Random();
+        this.grootte = r.nextInt(50) + 1; // Returnt een waarde van 1 tot en met 50
+        this.richting = r.nextInt(RECHTS + 1); // Return een waarde 0 of 1
     }
 
     @Override

@@ -2,14 +2,21 @@ package nl.han.ica.mainVissie;
 
 import nl.han.ica.OOPDProcessingEngineHAN.Objects.Sprite;
 
-
+/**
+ * Klasse speler waarin de vis geprogrammeerd wordt die kan worden bestuurd
+ *
+ */
 public class Speler extends Vis {
     static int grootte = 25;
 
     Speler(Oceaan o) {
-        super((o.getWorldWidth() / 2), (o.getWorldHeight() / 2), o, new Sprite("src/main/java/nl/han/ica/mainVissie/media/test.png"), 2);
+        super((o.getWorldWidth() / 2), (o.getWorldHeight() / 2), o, new Sprite("src/main/java/nl/han/ica/mainVissie/media/speler.png"), 4);
+
+        // Aangeven welke sprite er als het programma start moet worden weergegeven
         setCurrentFrameIndex(1);
-        setFriction(0.05f);
+
+        // Hoe ver de speler beweegt in 1 "move"
+        setFriction(0.15f);
     }
 
     @Override
@@ -42,6 +49,7 @@ public class Speler extends Vis {
         }
         if (keyCode == super.a.UP) {
             setDirectionSpeed(0, speed);
+            setCurrentFrameIndex(2);
         }
         if (keyCode == super.a.RIGHT) {
             setDirectionSpeed(90, speed);
@@ -49,6 +57,7 @@ public class Speler extends Vis {
         }
         if (keyCode == super.a.DOWN) {
             setDirectionSpeed(180, speed);
+            setCurrentFrameIndex(3);
         }
         if (key == super.a.ENTER) {
             System.out.println("Enter!");
