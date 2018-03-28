@@ -13,11 +13,23 @@ public class AI extends Vis {
 
 
 
-    public AI(int x, int y, Oceaan o, Sprite s, int frames) {
-        super(x, y, o, s, frames);
+    public AI(Oceaan o) {
+        super(o, new Sprite("src/main/java/nl/han/ica/mainVissie/media/AI.png"), 2);
         Random r = new Random();
         this.grootte = r.nextInt(50) + 1; // Returnt een waarde van 1 tot en met 50
         this.richting = r.nextInt(RECHTS + 1); // Return een waarde 0 of 1
+
+        //Bepaal welke richting de AI op kijkt
+        switch (richting) {
+            case LINKS:
+                setCurrentFrameIndex(0);
+                break;
+            case RECHTS:
+                setCurrentFrameIndex(1);
+                break;
+            default:
+                break;
+        }
     }
 
     @Override

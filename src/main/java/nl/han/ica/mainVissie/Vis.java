@@ -14,10 +14,10 @@ public abstract class Vis extends AnimatedSpriteObject implements ICollidableWit
     protected Oceaan oceaan;
     protected GameEngine a;
 
-    Vis(int x, int y, Oceaan o, Sprite s, int frames){
+    Vis(Oceaan o, Sprite s, int frames){
         super(s, frames);
-        xPos = x;
-        yPos = y;
+        //xPos = x;
+        //yPos = y;
         oceaan = o;
         a = oceaan.a;
     }

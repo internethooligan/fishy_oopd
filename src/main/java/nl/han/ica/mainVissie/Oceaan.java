@@ -7,8 +7,9 @@ import nl.han.ica.OOPDProcessingEngineHAN.View.View;
 public class Oceaan
 {
 //    public Sound achtergrondGeluid;
-//    public VisSpawner visSpawner;
+    public VisSpawner visSpawner;
     private Vis speler;
+
     private int worldWidth = 1204;
     private int worldHeight = 903;
     protected GameEngine a;
@@ -27,7 +28,9 @@ public class Oceaan
     public void maakSpelerAan(GameEngine g)
     {
         speler = new Speler(this);
-        g.addGameObject(speler, 100, 100);
+
+        // Spawn de speler op het midden van het speelveld
+        g.addGameObject(speler, worldWidth/2, worldHeight/2);
     }
 
     public void createViewWithViewport(GameEngine g, int screenWidth, int screenHeight, float zoomFactor)
@@ -40,10 +43,10 @@ public class Oceaan
         view.setBackground(g.loadImage("src/main/java/nl/han/ica/waterworld/media/background.jpg"));
     }
 
-//    public void maakAiSpawnerAan()
-//    {
-//        visSpawner = new VisSpawner();
-//    }
+    public void maakAiSpawnerAan()
+    {
+        visSpawner = new VisSpawner(5, this);
+    }
 //
 //    public void printScore(int score);
 //    {

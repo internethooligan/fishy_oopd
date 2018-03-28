@@ -9,8 +9,9 @@ import nl.han.ica.OOPDProcessingEngineHAN.Objects.Sprite;
 public class Speler extends Vis {
     static int grootte = 25;
 
+
     Speler(Oceaan o) {
-        super((o.getWorldWidth() / 2), (o.getWorldHeight() / 2), o, new Sprite("src/main/java/nl/han/ica/mainVissie/media/speler.png"), 4);
+        super(o, new Sprite("src/main/java/nl/han/ica/mainVissie/media/speler.png"), 4);
 
         // Aangeven welke sprite er als het programma start moet worden weergegeven
         setCurrentFrameIndex(1);
@@ -37,7 +38,6 @@ public class Speler extends Vis {
             setySpeed(0);
             setY(super.oceaan.getWorldHeight() - grootte);
         }
-
     }
 
     @Override
