@@ -1,10 +1,7 @@
 package nl.han.ica.mainVissie;
 
 import nl.han.ica.OOPDProcessingEngineHAN.Engine.GameEngine;
-import nl.han.ica.OOPDProcessingEngineHAN.Objects.Sprite;
-import nl.han.ica.OOPDProcessingEngineHAN.Tile.TileMap;
-import nl.han.ica.OOPDProcessingEngineHAN.Tile.TileType;
-import nl.han.ica.waterworld.tiles.BoardsTile;
+
 import processing.core.PApplet;
 
 public class mainVissie extends GameEngine
@@ -19,7 +16,6 @@ public class mainVissie extends GameEngine
     public void setupGame()
     {
         maakOceaanAan();
-        initializeTileMap();
         oceaan.createViewWithViewport(this,1000, 800, 1.1f);
     }
 
@@ -32,33 +28,6 @@ public class mainVissie extends GameEngine
     private void maakOceaanAan()
     {
         oceaan = new Oceaan(this);
-    }
-
-    private void initializeTileMap()
-    {
-        /* TILES */
-        Sprite boardsSprite = new Sprite("src/main/java/nl/han/ica/waterworld/media/boards.jpg");
-        TileType<BoardsTile> boardTileType = new TileType<>(BoardsTile.class, boardsSprite);
-
-        TileType[] tileTypes = {boardTileType};
-        int tileSize = 50;
-        int tilesMap[][] = {
-                {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
-                {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
-                {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
-                {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
-                {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
-                {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
-                {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
-                {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
-                {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
-                {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
-                {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
-                {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
-                {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
-                {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1}
-        };
-        tileMap = new TileMap(tileSize, tileTypes, tilesMap);
     }
 
     public void initializePersistence()

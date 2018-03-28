@@ -43,24 +43,21 @@ public class Speler extends Vis {
     @Override
     public void keyPressed(int keyCode, char key) {
         final int speed = 5;
-        if (keyCode == super.a.LEFT) {
+        if (keyCode == super.g.LEFT) {
             setDirectionSpeed(270, speed);
             setCurrentFrameIndex(0);
         }
-        if (keyCode == super.a.UP) {
+        if (keyCode == super.g.UP) {
             setDirectionSpeed(0, speed);
             setCurrentFrameIndex(2);
         }
-        if (keyCode == super.a.RIGHT) {
+        if (keyCode == super.g.RIGHT) {
             setDirectionSpeed(90, speed);
             setCurrentFrameIndex(1);
         }
-        if (keyCode == super.a.DOWN) {
+        if (keyCode == super.g.DOWN) {
             setDirectionSpeed(180, speed);
             setCurrentFrameIndex(3);
-        }
-        if (key == super.a.ENTER) {
-            System.out.println("Enter!");
         }
     }
 }

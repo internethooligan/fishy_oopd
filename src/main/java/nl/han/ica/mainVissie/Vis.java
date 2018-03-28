@@ -12,14 +12,14 @@ import java.util.List;
 public abstract class Vis extends AnimatedSpriteObject implements ICollidableWithGameObjects {
     protected int xPos, yPos;
     protected Oceaan oceaan;
-    protected GameEngine a;
+    protected GameEngine g;
 
     Vis(Oceaan o, Sprite s, int frames){
         super(s, frames);
         //xPos = x;
         //yPos = y;
         oceaan = o;
-        a = oceaan.g;
+        g = oceaan.g;
     }
 
 
