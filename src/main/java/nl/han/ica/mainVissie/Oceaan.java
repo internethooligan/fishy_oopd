@@ -32,7 +32,7 @@ public class Oceaan
         // Spawn de speler op het midden van het speelveld
         g.addGameObject(speler, worldWidth/2, worldHeight/2);
     }
-
+    
     public void createViewWithViewport(GameEngine g, int screenWidth, int screenHeight, float zoomFactor)
     {
         EdgeFollowingViewport viewPort = new EdgeFollowingViewport(speler, (int) Math.ceil(screenWidth / zoomFactor), (int) Math.ceil(screenHeight / zoomFactor), 0, 0);

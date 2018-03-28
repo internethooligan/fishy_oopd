@@ -40,7 +40,7 @@ public class VisSpawner implements IAlarmListener
     public void triggerAlarm(String alarmName)
     {
         Vis ai = new AI(oceaan);
-        g.addGameObject(ai, random.nextInt(g.getWidth()), g.getHeight());
+        g.addGameObject(ai, random.nextInt(oceaan.getWorldWidth()), random.nextInt(oceaan.getWorldHeight()));
         startAlarm();
     }
 }
