@@ -6,9 +6,9 @@ import nl.han.ica.OOPDProcessingEngineHAN.Objects.Sprite;
 
 public class AI extends Vis
 {
-    //
     private int grootte;
     private int richting;
+    private int snelheid;
 
     private final static int LINKS = 0;
     private final static int RECHTS = 1;
@@ -18,9 +18,11 @@ public class AI extends Vis
     {
         super(o, new Sprite("src/main/java/nl/han/ica/mainVissie/media/AI.png"), 2);
         Random r = new Random();
-        this.grootte = r.nextInt(50) + 1; // Returnt een waarde van 1 tot en met 50
-        this.richting = r.nextInt(RECHTS + 1); // Return een waarde 0 of 1
+        this.grootte = r.nextInt(50) + 1; // Returned een waarde van 1 tot en met 50
+        this.snelheid = r.nextInt(5) + 1; // Returned een waarde van 1 tot en met 5
+        this.richting = r.nextInt(RECHTS + 1); // Returned een waarde 0 of 1
 
+        // thisSprite.resize(a.getWidth()+grootte, a.getHeight() + grootte); :(:(:(:(:(:( HOEDAN?
         //Bepaal welke richting de AI op kijkt
         switch (richting)
         {
@@ -41,21 +43,18 @@ public class AI extends Vis
         switch (richting)
         {
             case LINKS:
-                setxSpeed(-grootte/10f);
+                setxSpeed(-snelheid);
                 break;
             case RECHTS:
-                setxSpeed(grootte/10f);
+                setxSpeed(snelheid);
+                break;
         }
     }
 
     @Override
     public void update()
     {
-        if (getX() <= 100)
-        {
-            super.g.deleteGameObject(this);
-        }
-        if (getY() <= 100)
+        if (getX() <= 50 || getY() <= 50)
         {
             super.g.deleteGameObject(this);
         }

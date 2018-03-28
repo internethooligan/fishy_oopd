@@ -10,7 +10,6 @@ import nl.han.ica.OOPDProcessingEngineHAN.Objects.Sprite;
 import java.util.List;
 
 public abstract class Vis extends AnimatedSpriteObject implements ICollidableWithGameObjects {
-    protected int xPos, yPos;
     protected Oceaan oceaan;
     protected GameEngine g;
 
@@ -24,7 +23,8 @@ public abstract class Vis extends AnimatedSpriteObject implements ICollidableWit
 
 
     @Override
-    public void gameObjectCollisionOccurred(List<GameObject> collidedGameObjects) {
+    public void gameObjectCollisionOccurred(List<GameObject> collidedGameObjects)
+    {
 
     }
 
