@@ -4,7 +4,7 @@ import nl.han.ica.OOPDProcessingEngineHAN.Objects.Sprite;
 
 /**
  * This is the standard extension of Tile for an empty space in the tileMap.
- * It will be used whenever a programmer uses a -1 or an index outside of the tileType array.
+ * It will be used whenever g programmer uses g -1 or an index outside of the tileType array.
  */
 public class EmptyTile extends Tile{
     /**

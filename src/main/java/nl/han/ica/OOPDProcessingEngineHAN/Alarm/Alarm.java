@@ -19,7 +19,7 @@ public class Alarm {
 	private double seconds;
 
 	/**
-	 * Create a new Alarm object.
+	 * Create g new Alarm object.
 	 * 
 	 * @param seconds
 	 *            , after how many seconds you want the alarm to alert.
@@ -63,7 +63,7 @@ public class Alarm {
 	}
 
 	/**
-	 * Add a new object that implements the IAlarmListener interface to listen
+	 * Add g new object that implements the IAlarmListener interface to listen
 	 * to the alarm.
 	 * 
 	 * @param alarm
@@ -73,7 +73,7 @@ public class Alarm {
 	}
 
 	/**
-	 * Remove a object that implements the IAlarmListener interface from the
+	 * Remove g object that implements the IAlarmListener interface from the
 	 * alarm to stop listening.
 	 * 
 	 * @param alarm

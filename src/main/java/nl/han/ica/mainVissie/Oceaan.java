@@ -11,12 +11,13 @@ public class Oceaan
     private Vis speler;
     private int worldWidth = 1920;
     private int worldHeight = 1080;
-    protected GameEngine a;
+    protected GameEngine g;
 
     public Oceaan(GameEngine g)
     {
+        this.g = g;
         maakSpelerAan(g);
-        a = g;
+        maakAiSpawnerAan();
     }
 
 //    public void maakSoundAan()
@@ -43,7 +44,7 @@ public class Oceaan
 
     public void maakAiSpawnerAan()
     {
-        visSpawner = new VisSpawner(5, this);
+        visSpawner = new VisSpawner(g, 5, this);
     }
 //
 //    public void printScore(int score);

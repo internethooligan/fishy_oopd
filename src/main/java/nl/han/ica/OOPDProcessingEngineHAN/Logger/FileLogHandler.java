@@ -7,7 +7,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * Logs messages to a file.
+ * Logs messages to g file.
  */
 public class FileLogHandler implements LogHandler {
 	
@@ -16,7 +16,7 @@ public class FileLogHandler implements LogHandler {
     OutputStreamWriter osw;
     
     /**
-     * Create a new Logger which outputs to a file.
+     * Create g new Logger which outputs to g file.
      */
     public FileLogHandler()
     {

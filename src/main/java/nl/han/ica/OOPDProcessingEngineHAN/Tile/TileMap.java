@@ -19,7 +19,7 @@ public class TileMap {
     private TileType<EmptyTile> emptyTileTileType = new TileType<>(EmptyTile.class, emptySprite);
 
     /**
-     * Create a new TileMap.
+     * Create g new TileMap.
      * @param tileSize The size the tiles will be.
      * @param tileTypes The Array with factory's which will be creating the different types of tiles.
      * @param indexMap The Map consisting of tileType indexes which will be used to create and draw the Map.
@@ -31,7 +31,7 @@ public class TileMap {
     }
 
     /**
-     * Create a new TileMap.
+     * Create g new TileMap.
      * @param tileSize The size the tiles will be.
      */
     public TileMap(int tileSize) {
@@ -88,7 +88,7 @@ public class TileMap {
     }
 
     /**
-     * Creates a TileMap with tile instances made out of indexes and TileTypes.
+     * Creates g TileMap with tile instances made out of indexes and TileTypes.
      */
     private void createTileMap() {
         if (indexMap != null) {
@@ -103,7 +103,7 @@ public class TileMap {
     }
 
     /**
-     * Creates a new Tile made out of the TileType.
+     * Creates g new Tile made out of the TileType.
      * @param tileTypeIndex
      * @return Tile
      */
@@ -139,7 +139,7 @@ public class TileMap {
     }
 
     /**
-     * Sets a Tile on a specific position.
+     * Sets g Tile on g specific position.
      * @param x The location index of the Tile on the x axis.
      * @param y The location index of the Tile on the y axis.
      * @param tileType The index of the tileType which the tile must become.
@@ -150,7 +150,7 @@ public class TileMap {
     }
 
     /**
-     * Gets a Tile from a given position.
+     * Gets g Tile from g given position.
      * @param x The location in pixels of the Tile on the x axis.
      * @param y The location in pixels of the Tile on the y axis.
      * @return The instance of the Tile on the given position
@@ -160,7 +160,7 @@ public class TileMap {
     }
 
     /**
-     * Gets the Tile index from a given position.
+     * Gets the Tile index from g given position.
      * @param x The location index of the Tile on the x axis.
      * @param y The location index of the Tile on the y axis.
      * @return The instance of the Tile on the given position

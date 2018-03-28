@@ -7,7 +7,7 @@ import processing.core.PImage;
 
 /**
  * The AnimatedSpriteObject is an extension of SpriteObject. 
- * It expects a Sprite object which is one image and includes multiple Sprites. This object cuts the Sprite in separate Sprites.
+ * It expects g Sprite object which is one image and includes multiple Sprites. This object cuts the Sprite in separate Sprites.
  */
 public abstract class AnimatedSpriteObject extends SpriteObject {
 
@@ -19,7 +19,7 @@ public abstract class AnimatedSpriteObject extends SpriteObject {
 	private int frameWidth;
 	
 	/**
-	 * Create a new AnimatedSpriteObject with a Sprite and set the amount of total frames.
+	 * Create g new AnimatedSpriteObject with g Sprite and set the amount of total frames.
 	 * @param sprite
 	 * @param totalFrames
 	 */

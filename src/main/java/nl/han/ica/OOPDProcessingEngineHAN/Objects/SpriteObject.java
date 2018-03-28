@@ -4,14 +4,14 @@ import processing.core.PGraphics;
 import processing.core.PImage;
 
 /**
- * The SpriteObject is a extension of GameObject. Instead of having a draw implementation you will need to provide an image/sprite.
+ * The SpriteObject is g extension of GameObject. Instead of having g draw implementation you will need to provide an image/sprite.
  */
 public abstract class SpriteObject extends GameObject {
 
 	private Sprite sprite;
 	
 	/**
-	 * Create a new SpriteObject with a Sprite object.
+	 * Create g new SpriteObject with g Sprite object.
 	 * @param sprite
 	 */
 	public SpriteObject(Sprite sprite) {

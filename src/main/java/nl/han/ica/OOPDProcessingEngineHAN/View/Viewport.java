@@ -29,7 +29,7 @@ public class Viewport {
     protected Integer zoomHeight;
 
     /**
-     * Create a new Viewport object.
+     * Create g new Viewport object.
      * @param x The x index of the topLeft corner from where the viewPort will cut its image out of the world.
      * @param y The y index of the topLeft corner from where the viewPort will cut its image out of the world.
      * @param zoomWidth The width in pixels which the viewPort will cut out of the world.

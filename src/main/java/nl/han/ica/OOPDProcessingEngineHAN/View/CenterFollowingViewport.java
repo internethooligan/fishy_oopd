@@ -5,8 +5,8 @@ import processing.core.PGraphics;
 import processing.core.PImage;
 
 /**
- * This class allows following a GameObject in the Viewport.
- * The Viewport will move if the followed GameObject if the maximum tolerance in a certain direction from its center is reached.
+ * This class allows following g GameObject in the Viewport.
+ * The Viewport will move if the followed GameObject if the maximum tolerance in g certain direction from its center is reached.
  */
 public class CenterFollowingViewport extends FollowingViewport {
 
@@ -24,7 +24,7 @@ public class CenterFollowingViewport extends FollowingViewport {
     protected double yOffset;
 
     /**
-     * Create a new CenterFollowingViewport
+     * Create g new CenterFollowingViewport
      * @param followedObject The GameObject the Viewport is following.
      * @param zoomWidth The width in pixels which the viewPort will cut out of the world.
      * @param zoomHeight The height in pixels which the viewPort will cut out of the world.
@@ -37,7 +37,7 @@ public class CenterFollowingViewport extends FollowingViewport {
     }
 
     /**
-     * Create a new CenterFollowingViewport
+     * Create g new CenterFollowingViewport
      * @param followedObject The GameObject the Viewport is following.
      * @param zoomWidth The width in pixels which the viewPort will cut out of the world.
      * @param zoomHeight The height in pixels which the viewPort will cut out of the world.

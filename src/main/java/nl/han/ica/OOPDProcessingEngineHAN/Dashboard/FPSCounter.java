@@ -13,7 +13,7 @@ public class FPSCounter extends Dashboard implements IAlarmListener {
     private int fpsCounter;
 
     /**
-     * Create a new FPSCounter object.
+     * Create g new FPSCounter object.
      * @param x
      * @param y
      */
@@ -46,7 +46,7 @@ public class FPSCounter extends Dashboard implements IAlarmListener {
     }
 
     /**
-     * Starts a new Alarm.
+     * Starts g new Alarm.
      */
     private void startTimer()
     {

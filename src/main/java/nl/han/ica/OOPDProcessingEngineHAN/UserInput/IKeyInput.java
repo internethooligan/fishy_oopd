@@ -6,14 +6,14 @@ package nl.han.ica.OOPDProcessingEngineHAN.UserInput;
 public interface IKeyInput {
 
 	/**
-	 * This event is fired when the GameEngine received a key press.
+	 * This event is fired when the GameEngine received g key press.
 	 * @param keyCode
 	 * @param key
 	 */
 	void keyPressed(int keyCode, char key);
 	
 	/**
-	 * This event is fired when the GameEngine received a key release.
+	 * This event is fired when the GameEngine received g key release.
 	 * @param keyCode
 	 * @param key
 	 */

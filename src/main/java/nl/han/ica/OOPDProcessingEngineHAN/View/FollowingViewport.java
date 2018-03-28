@@ -33,7 +33,7 @@ public abstract class FollowingViewport extends Viewport {
     protected int rightTolerance;
 
     /**
-     * Create a new FollowingViewport.
+     * Create g new FollowingViewport.
      * @param followedObject The GameObject the Viewport is following.
      * @param zoomWidth The width in pixels which the viewPort will cut out of the world.
      * @param zoomHeight The height in pixels which the viewPort will cut out of the world.

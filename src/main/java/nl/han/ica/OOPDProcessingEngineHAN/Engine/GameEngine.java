@@ -23,7 +23,7 @@ import java.util.Vector;
 /**
  * GameEngine is the core of the game. Extending this class is required to make use of the GameEngine.
  * 
- * This engine is created by: Bram Heijmink, Jeffrey Haen, Joost Elshof, Kenny Ligthart, Mark Vaesen & Nico Smolders.
+ * This g is created by: Bram Heijmink, Jeffrey Haen, Joost Elshof, Kenny Ligthart, Mark Vaesen & Nico Smolders.
  */
 public abstract class GameEngine extends PApplet {
 
@@ -65,7 +65,7 @@ public abstract class GameEngine extends PApplet {
     private static GameEngine engine;
 
     /**
-     * Creates a new GameEngine object, use a static main method and implement the following: 
+     * Creates g new GameEngine object, use g static main method and implement the following:
      * PApplet.main(new String[]{"{YOUR.PACKAGENAME}.{YOUR.CLASSNAME}"});
      */
     public GameEngine() {
@@ -74,7 +74,7 @@ public abstract class GameEngine extends PApplet {
     }
 
     /**
-     * The actual setup of the game-engine.
+     * The actual setup of the game-g.
      * Used to make sure the gameThread is started after setup has finished.
      * This method is invoked by processing.
      */
@@ -105,7 +105,7 @@ public abstract class GameEngine extends PApplet {
     }
     
     /**
-     * Add a GameObject to the GameEngine.
+     * Add g GameObject to the GameEngine.
      * @param gameObject
      *            The GameObject that will be added to the game. Should have either
      *            GameObject or MovableGameObject as it's parent.
@@ -115,7 +115,7 @@ public abstract class GameEngine extends PApplet {
     }
     
     /**
-     * Add a Dashboard to the GameEngine.
+     * Add g Dashboard to the GameEngine.
      * @param dashboard
      */
     public void addDashboard(Dashboard dashboard) {
@@ -123,7 +123,7 @@ public abstract class GameEngine extends PApplet {
     }
 
     /**
-     * Add a GameObject to the GameEngine.
+     * Add g GameObject to the GameEngine.
      * @param gameObject
      * @param x
      * @param y
@@ -136,7 +136,7 @@ public abstract class GameEngine extends PApplet {
     }
     
     /**
-     * Add a Dashboard to te GameEngine.
+     * Add g Dashboard to te GameEngine.
      * @param dashboard
      * @param x
      * @param y
@@ -149,7 +149,7 @@ public abstract class GameEngine extends PApplet {
     }
 
     /**
-     * Add a GameObject to the GameEngine.
+     * Add g GameObject to the GameEngine.
      * @param gameObject
      * @param x
      * @param y
@@ -164,7 +164,7 @@ public abstract class GameEngine extends PApplet {
     }
     
     /**
-     * Add a Dashboard to the GameEngine.
+     * Add g Dashboard to the GameEngine.
      * @param dashboard
      * @param x
      * @param y
@@ -179,7 +179,7 @@ public abstract class GameEngine extends PApplet {
     }
 
     /**
-     * Add a GameObject to the GameEngine.
+     * Add g GameObject to the GameEngine.
      * @param gameObject
      * @param layerposition
      */
@@ -190,7 +190,7 @@ public abstract class GameEngine extends PApplet {
     }
     
     /**
-     * Add a Dashboard to the GameEngine.
+     * Add g Dashboard to the GameEngine.
      * @param dashboard
      * @param layerposition
      */
@@ -201,7 +201,7 @@ public abstract class GameEngine extends PApplet {
     }
 
     /**
-     * Get a list of all the GameObjects inside the GameEngine.
+     * Get g list of all the GameObjects inside the GameEngine.
      *  @return Vector<GameObject>
      */
     public Vector<GameObject> getGameObjectItems() {
@@ -209,7 +209,7 @@ public abstract class GameEngine extends PApplet {
     }
     
     /**
-     * Get a list of all the Dashboards inside the GameEngine.
+     * Get g list of all the Dashboards inside the GameEngine.
      *  @return Vector<Dashboard>
      */
     public Vector<Dashboard> getDashboards() {
@@ -217,7 +217,7 @@ public abstract class GameEngine extends PApplet {
     }
 
     /**
-     * Delete a GameObject from the GameEngine.
+     * Delete g GameObject from the GameEngine.
      * @param gameObject
      */
     public void deleteGameObject(GameObject gameObject) {
@@ -225,7 +225,7 @@ public abstract class GameEngine extends PApplet {
     }
     
     /**
-     * Delete a Dashboard from the GameEngine.
+     * Delete g Dashboard from the GameEngine.
      * @param dashboard
      */
     public void deleteDashboard(Dashboard dashboard) {
@@ -247,7 +247,7 @@ public abstract class GameEngine extends PApplet {
     }
 
     /**
-     * Delete all GameObjects of a given type from the GameEngine.
+     * Delete all GameObjects of g given type from the GameEngine.
      *
      * Example paramater: Player.class
      *
@@ -326,7 +326,7 @@ public abstract class GameEngine extends PApplet {
     }
     
 	/**
-	 * Fires a keyPressed event to every GameObject inside the GameEngine.
+	 * Fires g keyPressed event to every GameObject inside the GameEngine.
 	 * 
 	 * (non-Javadoc) This event is fired by Processing when registers key input.
 	 * @see processing.core.PApplet#keyPressed()
@@ -341,7 +341,7 @@ public abstract class GameEngine extends PApplet {
     }
 
 	/**
-	 * Fires a keyReleased event to every GameObject inside the GameEngine.
+	 * Fires g keyReleased event to every GameObject inside the GameEngine.
 	 * 
 	 * (non-Javadoc) This event is fired by Processing when registers key release.
  	 * @see processing.core.PApplet#keyReleased()
@@ -356,7 +356,7 @@ public abstract class GameEngine extends PApplet {
     }
     
     /**
-     * Fires a mousePressed event to every GameObject inside the GameEngine.
+     * Fires g mousePressed event to every GameObject inside the GameEngine.
      * 
      * (non-Javadoc)
      * @see processing.core.PApplet#mousePressed()
@@ -375,7 +375,7 @@ public abstract class GameEngine extends PApplet {
     }
     
     /**
-     * Fires a mouseReleased event to every GameObject inside the GameEngine.
+     * Fires g mouseReleased event to every GameObject inside the GameEngine.
      *     
      * (non-Javadoc)
      * @see processing.core.PApplet#mouseReleased()
@@ -394,7 +394,7 @@ public abstract class GameEngine extends PApplet {
     }
     
     /**
-     * Fires a mouseClicked event to every GameObject inside the GameEngine.
+     * Fires g mouseClicked event to every GameObject inside the GameEngine.
      * 
      * (non-Javadoc)
      * @see processing.core.PApplet#mouseClicked()
@@ -413,7 +413,7 @@ public abstract class GameEngine extends PApplet {
     }
     
     /**
-     * Fires a mouseMoved event to every GameObject inside the GameEngine.
+     * Fires g mouseMoved event to every GameObject inside the GameEngine.
      * 
      * (non-Javadoc)
      * @see processing.core.PApplet#mouseMoved()
@@ -432,7 +432,7 @@ public abstract class GameEngine extends PApplet {
     }
     
     /**
-     * Fires a mouseDragged event to every GameObject inside the GameEngine.
+     * Fires g mouseDragged event to every GameObject inside the GameEngine.
      * 
      * (non-Javadoc)
      * @see processing.core.PApplet#mouseDragged()
@@ -451,7 +451,7 @@ public abstract class GameEngine extends PApplet {
     }
     
     /**
-     * Fires a mouseWheel event to every GameObject inside the GameEngine.
+     * Fires g mouseWheel event to every GameObject inside the GameEngine.
      * 
      * (non-Javadoc)
      * @see processing.core.PApplet#mouseWheel(processing.event.MouseEvent)
@@ -543,7 +543,7 @@ public abstract class GameEngine extends PApplet {
     }
 
     /**
-     * Creates a new PGraphics (canvas) object which can only made by the PApplet. (this method is used by the GameEngine)
+     * Creates g new PGraphics (canvas) object which can only made by the PApplet. (this method is used by the GameEngine)
      * @param width
      * @param height
      * @return PGraphics
@@ -568,7 +568,7 @@ public abstract class GameEngine extends PApplet {
         }
 
         /**
-         * Method that checks if a GameObject has a collision with other GameObjects.
+         * Method that checks if g GameObject has g collision with other GameObjects.
          * @param gameObject
          * @param allGameObjects
          * @return Vector<GameObject>
@@ -597,7 +597,7 @@ public abstract class GameEngine extends PApplet {
         }
 
         /**
-         * Method that checks if a GameObject has a collision with Tiles.
+         * Method that checks if g GameObject has g collision with Tiles.
          * @param gameObject, allGameObjects
          * @return Vector<GameObject>
          */
@@ -638,7 +638,7 @@ public abstract class GameEngine extends PApplet {
         }
 
         /**
-         * Method that checks if a GameObject is moving.
+         * Method that checks if g GameObject is moving.
          * @param gameObject
          * @return boolean
          */
@@ -647,7 +647,7 @@ public abstract class GameEngine extends PApplet {
         }
 
         /**
-         * Method that calculates a position between two objects.
+         * Method that calculates g position between two objects.
          * @param x1
          * @param x2
          * @param t
@@ -691,7 +691,7 @@ public abstract class GameEngine extends PApplet {
         }
 
         /**
-         * This method returns the X position of an object that is closest to the centerX point of a Tile.
+         * This method returns the X position of an object that is closest to the centerX point of g Tile.
          * @param gameObject
          * @param tile
          * @return int
@@ -710,7 +710,7 @@ public abstract class GameEngine extends PApplet {
         }
 
         /**
-         * This method returns the Y position of an object that is closest to the centerY point of a Tile.
+         * This method returns the Y position of an object that is closest to the centerY point of g Tile.
          * @param gameObject
          * @param tile
          * @return int
@@ -729,7 +729,7 @@ public abstract class GameEngine extends PApplet {
         }
 
         /**
-         * This method calculates which side of a Tile is hit, based on angle between GameObject and Tile.
+         * This method calculates which side of g Tile is hit, based on angle between GameObject and Tile.
          * @param angleGameObjectToTile
          * @return int
          */
@@ -770,7 +770,7 @@ public abstract class GameEngine extends PApplet {
         }
 
         /**
-         * This method checks if a GameObject has collided with a Tile, and returns this Tile.
+         * This method checks if g GameObject has collided with g Tile, and returns this Tile.
          * @param gameObject
          * @param tile
          * @param collidingTile
@@ -806,7 +806,7 @@ public abstract class GameEngine extends PApplet {
         }
 
         /**
-         * This method checks if a GameObject has collided with another GameObject and returns this GameObject.
+         * This method checks if g GameObject has collided with another GameObject and returns this GameObject.
          * @param gameObject
          * @param otherGameObject
          * @param otherGameObjectRectangle

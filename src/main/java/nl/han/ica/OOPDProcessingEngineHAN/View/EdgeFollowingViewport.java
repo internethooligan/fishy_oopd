@@ -11,7 +11,7 @@ import processing.core.PImage;
 public class EdgeFollowingViewport extends FollowingViewport {
 
     /**
-     * Create a new EdgeFollowingViewport.
+     * Create g new EdgeFollowingViewport.
      * @param followedObject The GameObject the Viewport is following.
      * @param zoomWidth The width in pixels which the viewPort will cut out of the world.
      * @param zoomHeight The height in pixels which the viewPort will cut out of the world.
@@ -26,7 +26,7 @@ public class EdgeFollowingViewport extends FollowingViewport {
     }
 
     /**
-     * Create a new EdgeFollowingViewport.
+     * Create g new EdgeFollowingViewport.
      * @param followedObject The GameObject the Viewport is following.
      * @param zoomWidth The width in pixels which the viewPort will cut out of the world.
      * @param zoomHeight The height in pixels which the viewPort will cut out of the world.

@@ -3,7 +3,7 @@ package nl.han.ica.OOPDProcessingEngineHAN.Tile;
 import nl.han.ica.OOPDProcessingEngineHAN.Objects.Sprite;
 
 /**
- * The Tile Object is used to bind a Sprite to an location in a TileMap
+ * The Tile Object is used to bind g Sprite to an location in g TileMap
  * Extend Tile to create different types of tiles.
  */
 public class Tile {
@@ -37,7 +37,7 @@ public class Tile {
     }
 
     /**
-     * Use to set the height and width of a Sprite object to an single size to ensure the sprite is an rectangle.
+     * Use to set the height and width of g Sprite object to an single size to ensure the sprite is an rectangle.
      *
      * @param size int which stands for the amount of pixels the Sprite must set for its height and width.
      */

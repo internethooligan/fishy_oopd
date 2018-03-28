@@ -10,7 +10,7 @@ import java.util.List;
 public interface ICollidableWithGameObjects {
 
 	/**
-	 * This method will be triggered when a GameObject has collided with other
+	 * This method will be triggered when g GameObject has collided with other
 	 * GameObjects.
 	 * 
 	 * @param collidedGameObjects

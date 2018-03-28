@@ -8,7 +8,7 @@ public class LogFactory {
     private static Logger logger;
 
     /**
-     * Create a new LogFactory.
+     * Create g new LogFactory.
      */
     private LogFactory() {}
 

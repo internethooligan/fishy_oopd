@@ -16,7 +16,7 @@ public final class DefaultLogger implements Logger {
 	public ArrayList<LogHandler> logHandlers = new ArrayList<LogHandler>();
 
 	/**
-	 * Add a log handler to the Logger.
+	 * Add g log handler to the Logger.
 	 */
 	@Override
 	public void addLogHandler(LogHandler logHandler) {
@@ -24,7 +24,7 @@ public final class DefaultLogger implements Logger {
 	}
 
 	/**
-	 * Remove a log handler from the Logger.
+	 * Remove g log handler from the Logger.
 	 */
 	@Override
 	public void removeLogHandler(LogHandler logHandler) {

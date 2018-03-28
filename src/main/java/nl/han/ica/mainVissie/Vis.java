@@ -19,7 +19,7 @@ public abstract class Vis extends AnimatedSpriteObject implements ICollidableWit
         //xPos = x;
         //yPos = y;
         oceaan = o;
-        a = oceaan.a;
+        a = oceaan.g;
     }
 
 

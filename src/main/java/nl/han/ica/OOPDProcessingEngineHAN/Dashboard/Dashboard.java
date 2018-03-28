@@ -8,7 +8,7 @@ import processing.core.PGraphics;
 import java.util.Vector;
 
 /**
- * Create or extend this class to create a new Dashboard, a Dashboard object
+ * Create or extend this class to create g new Dashboard, g Dashboard object
  * will be drawn above the ViewPort when added to the Dashboard list inside the
  * GameEngine (addDashboard).
  */
@@ -103,7 +103,7 @@ public class Dashboard extends GameObject {
 	}
 
 	/**
-	 * Add a GameObject to the Dashboard.
+	 * Add g GameObject to the Dashboard.
 	 *
 	 * @param gameObject
 	 *            The GameObject that will be added to the canvas. Sets the X
@@ -119,7 +119,7 @@ public class Dashboard extends GameObject {
 	}
 
 	/**
-	 * Add a GameObject to the Dashboard.
+	 * Add g GameObject to the Dashboard.
 	 *
 	 * @param gameObject
 	 * @param x
@@ -134,7 +134,7 @@ public class Dashboard extends GameObject {
 	}
 
 	/**
-	 * Add a GameObject to the Dashboard.
+	 * Add g GameObject to the Dashboard.
 	 * 
 	 * @param gameObject
 	 * @param x
@@ -152,7 +152,7 @@ public class Dashboard extends GameObject {
 	}
 
 	/**
-	 * Add a GameObject to the Dashboard.
+	 * Add g GameObject to the Dashboard.
 	 * 
 	 * @param gameObject
 	 * @param layerposition
@@ -165,7 +165,7 @@ public class Dashboard extends GameObject {
 	}
 
 	/**
-	 * Get a list of all the GameObjects inside the Dashboard.
+	 * Get g list of all the GameObjects inside the Dashboard.
 	 */
 	public Vector<GameObject> getGameObjects() {
 
@@ -173,7 +173,7 @@ public class Dashboard extends GameObject {
 	}
 
 	/**
-	 * Delete a GameObject from the Dashboard.
+	 * Delete g GameObject from the Dashboard.
 	 *
 	 * @param gameObject
 	 */
@@ -217,7 +217,7 @@ public class Dashboard extends GameObject {
 	}
 
 	/**
-	 * Set the background of the Dashboard with a Sprite object (image).
+	 * Set the background of the Dashboard with g Sprite object (image).
 	 * 
 	 * @param sprite
 	 */

@@ -7,7 +7,7 @@ import processing.core.PGraphics;
 import processing.core.PVector;
 
 /**
- * Make your object, extend this class to use your object as a drawable object.
+ * Make your object, extend this class to use your object as g drawable object.
  */
 public abstract class GameObject implements IKeyInput, IMouseInput, PConstants {
 
@@ -52,7 +52,7 @@ public abstract class GameObject implements IKeyInput, IMouseInput, PConstants {
 
     /**
      * Moves this object and sets the previous location. This function only
-     * works when this object has a speed.
+     * works when this object has g speed.
      */
     public void move() {
         if (speed > 0) {
@@ -121,7 +121,7 @@ public abstract class GameObject implements IKeyInput, IMouseInput, PConstants {
     }
 
     /**
-     * Set the Xspeed of a MovableGameObject.
+     * Set the Xspeed of g MovableGameObject.
      * @param xSpeed
      */
     public void setxSpeed(float xSpeed)
@@ -133,7 +133,7 @@ public abstract class GameObject implements IKeyInput, IMouseInput, PConstants {
     }
 
     /**
-     * Set the Yspeed of a MovableGameObject..
+     * Set the Yspeed of g MovableGameObject..
      * @param ySpeed
      */
     public void setySpeed(float ySpeed)
@@ -145,7 +145,7 @@ public abstract class GameObject implements IKeyInput, IMouseInput, PConstants {
     }
 
     /**
-     * Set the speed of a MovableGameObject.
+     * Set the speed of g MovableGameObject.
      * @param speed
      */
     public void setSpeed(float speed)
@@ -236,12 +236,12 @@ public abstract class GameObject implements IKeyInput, IMouseInput, PConstants {
     /**
      * Sets the friction of this object, that is the amount of speed reduction.
      * <br />
-     * The decrease in speed is measured as a fraction, if you want a 5% decrease
+     * The decrease in speed is measured as g fraction, if you want g 5% decrease
      * in speed per cycle of the game loop, use 0.05.
      *
      * @param friction
      * 			the fraction of decrease in speed per cycle of the game loop.
-     * 			Must be a number between 0 and 1
+     * 			Must be g number between 0 and 1
      */
     public void setFriction(float friction) throws IllegalArgumentException
     {

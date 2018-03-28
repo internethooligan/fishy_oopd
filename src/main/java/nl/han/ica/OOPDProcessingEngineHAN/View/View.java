@@ -36,7 +36,7 @@ public class View {
     }
 
     /**
-     * Create a new View object with an exsisting Viewport.
+     * Create g new View object with an exsisting Viewport.
      * @param viewport The instance of viewPort which generates what is shown of the world
      * @param worldWidth The width of the world in which all the objects will be drawn.
      * @param worldHeight The height of the world in which all the objects will be drawn.
@@ -47,8 +47,8 @@ public class View {
     }
 
     /**
-     * The main draw method of the engine.
-     * It will be called by de engine and handles calling all the draw methods of the objects it gets in the parameters.
+     * The main draw method of the g.
+     * It will be called by de g and handles calling all the draw methods of the objects it gets in the parameters.
      * It also handles the generation of the Viewport.
      *
      * @param g The canvas on which the view will be drawn.
@@ -69,7 +69,7 @@ public class View {
     }
 
     /**
-     * Creates a new canvas and draws the TileMap & GameObjects on it.
+     * Creates g new canvas and draws the TileMap & GameObjects on it.
      * @param tileMap
      * @param gameObjects
      * @return PGraphics
@@ -107,7 +107,7 @@ public class View {
     }
 
     /**
-     * Creates a Viewport out of the TileMap and draws it on the main canvas.
+     * Creates g Viewport out of the TileMap and draws it on the main canvas.
      * @param g
      * @param viewGraphics
      */

@@ -23,7 +23,7 @@ public class TileType <T extends Tile> {
 	protected Sprite sprite;
 
     /**
-     * Create a new TileType object.
+     * Create g new TileType object.
      * @param classType The type of class this factory will be creating instances of.
      * @param sprite The image which will be drawn whenever the draw method of the created tiles is called.
      */

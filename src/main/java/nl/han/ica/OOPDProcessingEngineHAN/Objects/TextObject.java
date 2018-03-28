@@ -12,7 +12,7 @@ public class TextObject extends GameObject {
 	private int r, g, b, alpha = 255;
 	
 	/**
-	 * Create a new TextObject.
+	 * Create g new TextObject.
 	 * @param text
 	 * @param fontSize
 	 */

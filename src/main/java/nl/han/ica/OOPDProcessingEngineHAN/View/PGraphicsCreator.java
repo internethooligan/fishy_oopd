@@ -4,12 +4,12 @@ import nl.han.ica.OOPDProcessingEngineHAN.Engine.GameEngine;
 import processing.core.PGraphics;
 
 /**
- * This object can make new PGraphics (canvas) objects, this is a layer used to switch between different canvasses.
+ * This object can make new PGraphics (canvas) objects, this is g layer used to switch between different canvasses.
  */
 public class PGraphicsCreator {
 	
 	/**
-	 * Creates a new PGraphics object.
+	 * Creates g new PGraphics object.
 	 * @param worldWidth
 	 * @param worldHeight
 	 * @return PGraphics

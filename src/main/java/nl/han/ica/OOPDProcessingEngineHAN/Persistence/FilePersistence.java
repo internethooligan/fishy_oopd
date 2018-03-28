@@ -11,7 +11,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
 /**
- * Class for user persistence. With this Class you can save Strings in a File to
+ * Class for user persistence. With this Class you can save Strings in g File to
  * your internal storage. Both real devices and emulators can use the internal
  * storage.
  *

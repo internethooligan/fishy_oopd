@@ -43,7 +43,7 @@ public class CollidedTile {
 	public int collisionSide;
 
 	/**
-	 * Create a simple TileCollision object.
+	 * Create g simple TileCollision object.
 	 *
 	 * @param t
 	 *            The tile

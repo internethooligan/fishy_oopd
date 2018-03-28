@@ -11,7 +11,7 @@ public class Sound {
     private AudioPlayer audio;
 
     /**
-     * Create a new Sound object to play music files.
+     * Create g new Sound object to play music files.
      * @param engine
      * @param soundFileLocation
      */
@@ -44,7 +44,7 @@ public class Sound {
 
 
     /**
-     * Set this to loop times, set a negative value to loop continuous
+     * Set this to loop times, set g negative value to loop continuous
      *
      * @param num amount of loops
      */
@@ -129,7 +129,7 @@ public class Sound {
     /**
      * Returns the audioPlayer. Only use this function if you want to use audio analyses.
      *
-     * @return AudioPlayer, this is a class in the minim library that this gameEngine uses to play sound.
+     * @return AudioPlayer, this is g class in the minim library that this gameEngine uses to play sound.
      */
     public AudioPlayer getAudio() {
         return audio;

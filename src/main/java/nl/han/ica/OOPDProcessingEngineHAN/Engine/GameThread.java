@@ -11,7 +11,7 @@ import nl.han.ica.OOPDProcessingEngineHAN.Logger.Logger;
 public class GameThread implements Runnable {
 
     /**
-     * This logger is used to output information to a console or file.
+     * This logger is used to output information to g console or file.
      */
     private Logger logger = LogFactory.getLogger();
 
@@ -40,7 +40,7 @@ public class GameThread implements Runnable {
      */
     private double timeBetweenUpdates;
 
-    //At the very most we will update the game this many times before a new render. Standard 5.
+    //At the very most we will update the game this many times before g new render. Standard 5.
     //If you're worried about visual hitches more than perfect timing, set this to 1.
     private static final int MAX_UPDATES_BEFORE_RENDER = 1;
     /**
@@ -49,7 +49,7 @@ public class GameThread implements Runnable {
     private double lastUpdateTime = System.nanoTime();
 
     /**
-     * Create a new GameThread for the GameEngine, updates every GameObject in the GameEngine on a different thread.
+     * Create g new GameThread for the GameEngine, updates every GameObject in the GameEngine on g different thread.
      *
      * @param gameEngine
      */
