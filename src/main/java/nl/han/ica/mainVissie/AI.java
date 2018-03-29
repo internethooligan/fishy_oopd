@@ -19,6 +19,7 @@ public class AI extends Vis {
         this.grootte = r.nextInt(150) + 1; // Returned een waarde van 1 tot en met 50
         this.snelheid = r.nextInt(5) + 1; // Returned een waarde van 1 tot en met 5
         this.richting = r.nextInt(RECHTS + 1); // Returned een waarde 0 of 1
+        bepaalGrootte();
 
         super.s.resize(grootte, grootte);
         //Bepaal welke richting de AI op kijkt
@@ -33,6 +34,11 @@ public class AI extends Vis {
                 break;
         }
         beweeg(richting);
+    }
+
+    public void bepaalGrootte()
+    {
+        super.s.resize(grootte, grootte);
     }
 
     public void beweeg(int richting) {
@@ -57,7 +63,8 @@ public class AI extends Vis {
         return richting;
     }
 
-    public int getGrootte() {
+    public int getGrootte()
+    {
         return grootte;
     }
 }
