@@ -18,7 +18,7 @@ public class Speler extends Vis {
         setCurrentFrameIndex(1);
 
         // Hoe ver de speler beweegt in 1 "move"
-        setFriction(0.15f);
+        setFriction(0.05f);
     }
 
     @Override
@@ -62,5 +62,9 @@ public class Speler extends Vis {
             setDirectionSpeed(180, speed);
             setCurrentFrameIndex(3);
         }
+    }
+
+    public static int getGrootte() {
+        return grootte;
     }
 }

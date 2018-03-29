@@ -11,12 +11,12 @@ public class AI extends Vis {
 
     private final static int LINKS = 0;
     private final static int RECHTS = 1;
-asdf
+
 
     public AI(Oceaan o) {
         super(o, new Sprite("src/main/java/nl/han/ica/mainVissie/media/AI.png"), 2);
         Random r = new Random();
-        this.grootte = r.nextInt(100) + 1; // Returned een waarde van 1 tot en met 50
+        this.grootte = r.nextInt(150) + 1; // Returned een waarde van 1 tot en met 50
         this.snelheid = r.nextInt(5) + 1; // Returned een waarde van 1 tot en met 5
         this.richting = r.nextInt(RECHTS + 1); // Returned een waarde 0 of 1
 
@@ -55,5 +55,9 @@ asdf
 
     public int getRichting() {
         return richting;
+    }
+
+    public int getGrootte() {
+        return grootte;
     }
 }
