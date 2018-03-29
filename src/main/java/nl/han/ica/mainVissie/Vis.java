@@ -12,7 +12,7 @@ import java.util.List;
 public abstract class Vis extends AnimatedSpriteObject implements ICollidableWithGameObjects {
     protected Oceaan oceaan;
     protected GameEngine g;
-   // protected Sprite s;
+    protected Sprite s;
 
     Vis(Oceaan o, Sprite s, int frames){
         super(s, frames);
@@ -20,7 +20,7 @@ public abstract class Vis extends AnimatedSpriteObject implements ICollidableWit
         //yPos = y;
         oceaan = o;
         g = oceaan.g;
-      //  this.s = s;
+        this.s = s;
     }
 
 

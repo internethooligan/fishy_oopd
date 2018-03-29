@@ -7,7 +7,7 @@ import nl.han.ica.OOPDProcessingEngineHAN.Objects.Sprite;
  *
  */
 public class Speler extends Vis {
-    static int grootte = 25;
+    static int grootte = 100;
 
 
     Speler(Oceaan o) {
