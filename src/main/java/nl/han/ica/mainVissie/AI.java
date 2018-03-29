@@ -1,7 +1,6 @@
 package nl.han.ica.mainVissie;
 
 import java.util.Random;
-
 import nl.han.ica.OOPDProcessingEngineHAN.Objects.Sprite;
 
 public class AI extends Vis {
@@ -21,7 +20,6 @@ public class AI extends Vis {
         this.richting = r.nextInt(RECHTS + 1); // Returned een waarde 0 of 1
         bepaalGrootte();
 
-        super.s.resize(grootte, grootte);
         //Bepaal welke richting de AI op kijkt
         switch (richting) {
             case LINKS:
@@ -39,6 +37,7 @@ public class AI extends Vis {
     public void bepaalGrootte()
     {
         super.s.resize(grootte, grootte);
+        setFrameWidth(grootte / 2);
     }
 
     public void beweeg(int richting) {

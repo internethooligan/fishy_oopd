@@ -83,4 +83,9 @@ public abstract class AnimatedSpriteObject extends SpriteObject {
 	public void setTotalFrames(int totalFrames) {
 		this.totalFrames = totalFrames;
 	}
+
+	public void setFrameWidth(int frameWidth)
+	{
+		this.frameWidth = frameWidth;
+	}
 }

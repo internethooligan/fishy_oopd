@@ -7,7 +7,7 @@ import nl.han.ica.OOPDProcessingEngineHAN.Objects.Sprite;
  */
 public class Speler extends Vis
 {
-    static int grootte = 100;
+    static int grootte = 48;
 
     //rbnirbnrbnrnb
 
@@ -30,7 +30,8 @@ public class Speler extends Vis
     public void maakGroter(int waarde)
     {
         grootte += waarde;
-        super.s.resize(waarde, waarde);
+        super.s.resize(grootte, grootte);
+        setFrameWidth(grootte / 4);
     }
 
     @Override
