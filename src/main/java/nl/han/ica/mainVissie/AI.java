@@ -4,8 +4,7 @@ import java.util.Random;
 
 import nl.han.ica.OOPDProcessingEngineHAN.Objects.Sprite;
 
-public class AI extends Vis
-{
+public class AI extends Vis {
     private int grootte;
     private int richting;
     private int snelheid;
@@ -14,8 +13,7 @@ public class AI extends Vis
     private final static int RECHTS = 1;
 
 
-    public AI(Oceaan o)
-    {
+    public AI(Oceaan o) {
         super(o, new Sprite("src/main/java/nl/han/ica/mainVissie/media/AI.png"), 2);
         Random r = new Random();
         this.grootte = r.nextInt(50) + 1; // Returned een waarde van 1 tot en met 50
@@ -24,8 +22,7 @@ public class AI extends Vis
 
         // thisSprite.resize(a.getWidth()+grootte, a.getHeight() + grootte); :(:(:(:(:(:( HOEDAN?
         //Bepaal welke richting de AI op kijkt
-        switch (richting)
-        {
+        switch (richting) {
             case LINKS:
                 setCurrentFrameIndex(0);
                 break;
@@ -38,10 +35,8 @@ public class AI extends Vis
         beweeg(richting);
     }
 
-    public void beweeg(int richting)
-    {
-        switch (richting)
-        {
+    public void beweeg(int richting) {
+        switch (richting) {
             case LINKS:
                 setxSpeed(-snelheid);
                 break;
@@ -52,11 +47,13 @@ public class AI extends Vis
     }
 
     @Override
-    public void update()
-    {
-        if (getX() <= 50 || getY() <= 50)
-        {
+    public void update() {
+        if (getX() <= 10 || getX() >= oceaan.getWorldWidth()) {
             super.g.deleteGameObject(this);
         }
+    }
+
+    public int getRichting() {
+        return richting;
     }
 }

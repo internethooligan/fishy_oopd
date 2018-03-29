@@ -3,10 +3,11 @@ package nl.han.ica.mainVissie;
 import nl.han.ica.OOPDProcessingEngineHAN.Engine.GameEngine;
 import nl.han.ica.OOPDProcessingEngineHAN.View.EdgeFollowingViewport;
 import nl.han.ica.OOPDProcessingEngineHAN.View.View;
+import nl.han.ica.OOPDProcessingEngineHAN.Sound.Sound;
 
 public class Oceaan
 {
-//    public Sound achtergrondGeluid;
+    public Sound achtergrondGeluid;
     private VisSpawner visSpawner;
     private Vis speler;
     private int worldWidth = 1920;
@@ -18,19 +19,21 @@ public class Oceaan
         this.g = g;
         maakSpelerAan(g);
         maakAiSpawnerAan();
+        maakSoundAan();
+        //achtergrondGeluid.play();
     }
 
-//    public void maakSoundAan()
-//    {
-//        achtergrondGeluid = new Sound();
-//    }
+    public void maakSoundAan()
+    {
+        achtergrondGeluid = new Sound(g, "src/main/java/nl/han/ica/mainVissie/media/background.mp3");
+    }
 
     private void maakSpelerAan(GameEngine g)
     {
         speler = new Speler(this);
 
         // Spawn de speler op het midden van het speelveld
-        g.addGameObject(speler, worldWidth/2, worldHeight/2);
+        g.addGameObject(speler, worldWidth / 2, worldHeight / 2);
     }
 
     public void createViewWithViewport(GameEngine g, int screenWidth, int screenHeight, float zoomFactor)

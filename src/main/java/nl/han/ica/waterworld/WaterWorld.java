@@ -137,7 +137,7 @@ public class WaterWorld extends GameEngine {
         }
     }
 
-    /** 
+    /**
      * Initialiseert de tilemap
      */
     private void initializeTileMap() {

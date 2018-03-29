@@ -11,15 +11,13 @@ import java.util.Random;
  *
  * @author harry & de boiii
  */
-public class VisSpawner implements IAlarmListener
-{
+public class VisSpawner implements IAlarmListener {
     private Random random;
     private Oceaan oceaan;
     private float vissenPerSeconde;
     private GameEngine g;
 
-    VisSpawner(GameEngine g, float vissenPerSeconde, Oceaan oceaan)
-    {
+    VisSpawner(GameEngine g, float vissenPerSeconde, Oceaan oceaan) {
         this.vissenPerSeconde = vissenPerSeconde;
         this.oceaan = oceaan;
         this.g = g;
@@ -28,8 +26,7 @@ public class VisSpawner implements IAlarmListener
         startAlarm();
     }
 
-    private void startAlarm()
-    {
+    private void startAlarm() {
         Alarm alarm = new Alarm("Nieuwe vis", 1 / vissenPerSeconde);
         alarm.addTarget(this);
         alarm.start();
@@ -37,10 +34,15 @@ public class VisSpawner implements IAlarmListener
 
 
     @Override
-    public void triggerAlarm(String alarmName)
-    {
+    public void triggerAlarm(String alarmName) {
         Vis ai = new AI(oceaan);
-        g.addGameObject(ai, random.nextInt(oceaan.getWorldWidth()), random.nextInt(oceaan.getWorldHeight()));
+
+
+        if (((AI) ai).getRichting() == 0) {
+            g.addGameObject(ai, oceaan.getWorldWidth(), random.nextInt(oceaan.getWorldHeight()));
+        } else {
+            g.addGameObject(ai, 10, random.nextInt(oceaan.getWorldHeight()));
+        }
         startAlarm();
     }
 }
