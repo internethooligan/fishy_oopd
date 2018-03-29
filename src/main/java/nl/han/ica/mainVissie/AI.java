@@ -15,8 +15,8 @@ public class AI extends Vis {
     public AI(Oceaan o) {
         super(o, new Sprite("src/main/java/nl/han/ica/mainVissie/media/AI.png"), 2);
         Random r = new Random();
-        this.grootte = r.nextInt(150) + 1; // Returned een waarde van 1 tot en met 50
-        this.snelheid = r.nextInt(5) + 1; // Returned een waarde van 1 tot en met 5
+        this.grootte = r.nextInt(250) + 1; // Returned een waarde van 1 tot en met 50
+        this.snelheid = r.nextInt(4) + 1; // Returned een waarde van 1 tot en met 5
         this.richting = r.nextInt(RECHTS + 1); // Returned een waarde 0 of 1
         bepaalGrootte();
 
@@ -37,7 +37,7 @@ public class AI extends Vis {
     public void bepaalGrootte()
     {
         super.s.resize(grootte, grootte);
-        setFrameWidth(grootte / 2);
+        setFrameWidth(grootte / 2); // setter gemaakt in AnimatedSpriteObject uit GameEngine
     }
 
     public void beweeg(int richting) {

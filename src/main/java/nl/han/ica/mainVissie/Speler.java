@@ -7,9 +7,7 @@ import nl.han.ica.OOPDProcessingEngineHAN.Objects.Sprite;
  */
 public class Speler extends Vis
 {
-    static int grootte = 48;
-
-    //rbnirbnrbnrnb
+    private int grootte = 48;
 
     Speler(Oceaan o)
     {
@@ -31,7 +29,7 @@ public class Speler extends Vis
     {
         grootte += waarde;
         super.s.resize(grootte, grootte);
-        setFrameWidth(grootte / 4);
+        setFrameWidth(grootte / 4); // setter gemaakt in AnimatedSpriteObject uit GameEngine
     }
 
     @Override
@@ -60,8 +58,6 @@ public class Speler extends Vis
         }
     }
 
-    //feueicmaimi
-
     @Override
     public void keyPressed(int keyCode, char key)
     {
@@ -88,7 +84,7 @@ public class Speler extends Vis
         }
     }
 
-    public static int getGrootte() {
+    public int getGrootte() {
         return grootte;
     }
 }

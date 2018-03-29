@@ -16,7 +16,7 @@ public class mainVissie extends GameEngine
     public void setupGame()
     {
         maakOceaanAan();
-        oceaan.createViewWithViewport(this,1000, 800, 1.1f);
+        oceaan.createViewWithViewport(this,1000, 800, 1f);
     }
 
     @Override

@@ -7,6 +7,7 @@ import nl.han.ica.OOPDProcessingEngineHAN.Sound.Sound;
 
 public class Oceaan
 {
+    private tekstObject score;
     public Sound achtergrondGeluid;
     private VisSpawner visSpawner;
     private Vis speler;
@@ -20,12 +21,17 @@ public class Oceaan
         maakSpelerAan(g);
         maakAiSpawnerAan();
         maakSoundAan();
-        //achtergrondGeluid.play();
     }
 
-    public void maakSoundAan()
+    private void printScore()
+    {
+        score.setTekst("Score: " + (speler.getGrootte() - 48) * 100);
+    }
+
+    private void maakSoundAan()
     {
         achtergrondGeluid = new Sound(g, "src/main/java/nl/han/ica/mainVissie/media/background.mp3");
+        achtergrondGeluid.loop(-1);
     }
 
     private void maakSpelerAan(GameEngine g)
@@ -47,7 +53,7 @@ public class Oceaan
 
     public void maakAiSpawnerAan()
     {
-        visSpawner = new VisSpawner(g, 2, this);
+        visSpawner = new VisSpawner(g, 1, this);
     }
 
 //    public void printScore(int score);

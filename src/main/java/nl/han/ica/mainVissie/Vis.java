@@ -52,6 +52,8 @@ public abstract class Vis extends AnimatedSpriteObject implements ICollidableWit
         }
     }
 
+    public abstract int getGrootte();
+
     @Override
     public void update()
     {
