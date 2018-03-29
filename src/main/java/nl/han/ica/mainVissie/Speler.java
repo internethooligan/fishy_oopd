@@ -40,6 +40,8 @@ public class Speler extends Vis {
         }
     }
 
+    //heil
+
     @Override
     public void keyPressed(int keyCode, char key) {
         final int speed = 5;

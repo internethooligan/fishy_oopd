@@ -14,7 +14,7 @@ public abstract class Vis extends AnimatedSpriteObject implements ICollidableWit
     protected GameEngine g;
    // protected Sprite s;
 
-    Vis(Oceaan o, Sprite s, int frames){
+    Vis(Oceaan o, Sprite s, int frames) {
         super(s, frames);
         //xPos = x;
         //yPos = y;
@@ -25,8 +25,7 @@ public abstract class Vis extends AnimatedSpriteObject implements ICollidableWit
 
 
     @Override
-    public void gameObjectCollisionOccurred(List<GameObject> collidedGameObjects)
-    {
+    public void gameObjectCollisionOccurred(List<GameObject> collidedGameObjects) {
 
     }
 
