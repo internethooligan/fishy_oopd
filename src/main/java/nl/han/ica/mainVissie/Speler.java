@@ -9,6 +9,7 @@ import nl.han.ica.OOPDProcessingEngineHAN.Objects.Sprite;
 public class Speler extends Vis {
     static int grootte = 100;
 
+    //rbnirbnrbnrnb
 
     Speler(Oceaan o) {
         super(o, new Sprite("src/main/java/nl/han/ica/mainVissie/media/speler.png"), 4);
