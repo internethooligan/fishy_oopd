@@ -40,7 +40,7 @@ public class Speler extends Vis {
         }
     }
 
-    //heil
+    //feueicmaimi
 
     @Override
     public void keyPressed(int keyCode, char key) {
