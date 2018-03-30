@@ -1,5 +1,6 @@
 package nl.han.ica.mainVissie;
 
+import nl.han.ica.OOPDProcessingEngineHAN.Dashboard.Dashboard;
 import nl.han.ica.OOPDProcessingEngineHAN.Engine.GameEngine;
 import nl.han.ica.OOPDProcessingEngineHAN.View.EdgeFollowingViewport;
 import nl.han.ica.OOPDProcessingEngineHAN.View.View;
@@ -22,14 +23,20 @@ public class Oceaan
         this.g = g;
         maakMenuAan();
         menu.addGameObject(ai);
+
         //maakSpelerAan(g);
+        //printScore(worldWidth, 100);
         //maakAiSpawnerAan();
         //maakSoundAan();
     }
 
-    private void printScore()
+    private void printScore(int width, int height)
     {
+        Dashboard dashboard = new Dashboard(0, 0, width, height);
+        score = new tekstObject("");
         score.setTekst("Score: " + (speler.getGrootte() - 48) * 100);
+        dashboard.addGameObject(score);
+        g.addDashboard(dashboard);
     }
 
     private void maakMenuAan(){
