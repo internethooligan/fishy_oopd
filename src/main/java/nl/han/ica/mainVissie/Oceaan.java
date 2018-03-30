@@ -16,13 +16,11 @@ public class Oceaan
     private int worldHeight = 1080;
     protected GameEngine g;
     private Menu menu;
-    private AI ai = new AI(this);
 
     public Oceaan(GameEngine g)
     {
         this.g = g;
         maakMenuAan();
-        menu.addGameObject(ai);
 
         maakSpelerAan(g);
         printScore(worldWidth, 100);
