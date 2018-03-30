@@ -24,19 +24,23 @@ public class Oceaan
         maakMenuAan();
         menu.addGameObject(ai);
 
-        //maakSpelerAan(g);
-        //printScore(worldWidth, 100);
-        //maakAiSpawnerAan();
-        //maakSoundAan();
+        maakSpelerAan(g);
+        printScore(worldWidth, 100);
+        maakAiSpawnerAan();
+        maakSoundAan();
     }
 
     private void printScore(int width, int height)
     {
         Dashboard dashboard = new Dashboard(0, 0, width, height);
-        score = new tekstObject("");
-        score.setTekst("Score: " + (speler.getGrootte() - 48) * 100);
+        score = new tekstObject("Score: 0");
         dashboard.addGameObject(score);
         g.addDashboard(dashboard);
+    }
+
+    public void verhoogScore()
+    {
+        score.setTekst("Score: " + (speler.getGrootte() - 48) * 100);
     }
 
     private void maakMenuAan(){
