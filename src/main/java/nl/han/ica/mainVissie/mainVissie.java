@@ -4,49 +4,42 @@ import nl.han.ica.OOPDProcessingEngineHAN.Engine.GameEngine;
 
 import processing.core.PApplet;
 
-public class mainVissie extends GameEngine
-{
+public class mainVissie extends GameEngine {
     private Oceaan oceaan;
-    public static void main(String[] args)
-    {
+
+    public static void main(String[] args) {
         PApplet.main(new String[]{"nl.han.ica.mainVissie.mainVissie"});
     }
 
     @Override
-    public void setupGame()
-    {
+    public void setupGame() {
         maakOceaanAan();
-        oceaan.createViewWithViewport(this,1000, 800, 1f);
+        //oceaan.createViewWithViewport(this, 1000, 800, 1f);
+        oceaan.createViewWithoutViewport(this, 1000, 800);
     }
 
     @Override
-    public void update()
-    {
+    public void update() {
 
     }
 
-    private void maakOceaanAan()
-    {
+    private void maakOceaanAan() {
         oceaan = new Oceaan(this);
     }
 
-    public void initializePersistence()
-    {
+    public void initializePersistence() {
 
     }
 
-    public void verhoogScore()
-    {
+    public void verhoogScore() {
         // to-do (must)
     }
 
-    public void maakMenuAan()
-    {
+    public void maakMenuAan() {
         // to-do (should)
     }
 
-    public void pauzeerSpel()
-    {
+    public void pauzeerSpel() {
         // to-do (could)
     }
 }

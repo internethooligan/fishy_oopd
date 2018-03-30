@@ -14,18 +14,26 @@ public class Oceaan
     private int worldWidth = 1920;
     private int worldHeight = 1080;
     protected GameEngine g;
+    private Menu menu;
+    private AI ai = new AI(this);
 
     public Oceaan(GameEngine g)
     {
         this.g = g;
-        maakSpelerAan(g);
-        maakAiSpawnerAan();
-        maakSoundAan();
+        maakMenuAan();
+        menu.addGameObject(ai);
+        //maakSpelerAan(g);
+        //maakAiSpawnerAan();
+        //maakSoundAan();
     }
 
     private void printScore()
     {
         score.setTekst("Score: " + (speler.getGrootte() - 48) * 100);
+    }
+
+    private void maakMenuAan(){
+        menu = new Menu();
     }
 
     private void maakSoundAan()
@@ -49,6 +57,14 @@ public class Oceaan
         g.setView(view);
         g.size(screenWidth, screenHeight);
         view.setBackground(g.loadImage("src/main/java/nl/han/ica/mainVissie/media/AchtergrondVissie.jpg"));
+    }
+
+    public void createViewWithoutViewport(GameEngine g, int screenWidth, int screenHeight) {
+        View view = new View(screenWidth,screenHeight);
+        view.setBackground(g.loadImage("src/main/java/nl/han/ica/mainVissie/media/AchtergrondVissie1000x800.jpg"));
+
+        g.setView(view);
+        g.size(screenWidth, screenHeight);
     }
 
     public void maakAiSpawnerAan()

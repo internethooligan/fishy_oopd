@@ -1,6 +1,7 @@
 package nl.han.ica.mainVissie;
 
 import nl.han.ica.OOPDProcessingEngineHAN.Objects.Sprite;
+import nl.han.ica.OOPDProcessingEngineHAN.Sound.Sound;
 
 /**
  * Klasse speler waarin de vis geprogrammeerd wordt die kan worden bestuurd
@@ -8,10 +9,12 @@ import nl.han.ica.OOPDProcessingEngineHAN.Objects.Sprite;
 public class Speler extends Vis
 {
     private int grootte = 48;
+    private final Sound hapGeluid;
 
     Speler(Oceaan o)
     {
         super(o, new Sprite("src/main/java/nl/han/ica/mainVissie/media/speler.png"), 4);
+        hapGeluid = new Sound(o.g,"src/main/java/nl/han/ica/mainVissie/media/hap.mp3");
 
         // Aangeven welke sprite er als het programma start moet worden weergegeven
         setCurrentFrameIndex(1);
@@ -30,6 +33,11 @@ public class Speler extends Vis
         grootte += waarde;
         super.s.resize(grootte, grootte);
         setFrameWidth(grootte / 4); // setter gemaakt in AnimatedSpriteObject uit GameEngine
+    }
+
+    public void speelHapGeluid(){
+        hapGeluid.rewind();
+        hapGeluid.play();
     }
 
     @Override

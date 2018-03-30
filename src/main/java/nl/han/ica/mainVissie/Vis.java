@@ -38,6 +38,7 @@ public abstract class Vis extends AnimatedSpriteObject implements ICollidableWit
             {
                 if (((Speler) this).getGrootte() > ((AI) go).getGrootte())
                 {
+                    ((Speler) this).speelHapGeluid();
                     g.deleteGameObject(go);
                     ((Speler) this).maakGroter(15);
                 } else if (((Speler) this).getGrootte() < ((AI) go).getGrootte())
